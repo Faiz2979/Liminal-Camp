@@ -19,7 +19,10 @@ public class TriggerEvent : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player")) return;
-
+        if(UIPopup.Instance.gameObject.activeInHierarchy)
+        {
+            UIPopup.Instance.Hide();
+        }
         PlayerInteractor.Instance.ClearInteractable();
         currentInteractable = null;
     }

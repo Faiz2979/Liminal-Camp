@@ -22,5 +22,6 @@ public class UITransitionController : MonoBehaviour
     {
         onTransitionComplete?.Invoke();
         onTransitionComplete = null;
+        this.gameObject.SetActive(false);
     }
 }

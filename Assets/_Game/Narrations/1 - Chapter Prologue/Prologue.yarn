@@ -1,12 +1,9 @@
 ﻿title: Prologue
 ---
 Pain strikes all at once.
-<<wait 5.0>>
 My body feels like it could be shattered. 
-<<wait 5.0>>
 The pain sensation is killing me. 
-<<wait 5.0>>
 Until I can’t feel anything at all
-<<wait 5.0>>
 ...
+<<ChangeScene Boot "Game">>
 ===

@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 30135cc983e7b2342be82336e0d5ba8e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 657826975232385728
+    second: CampFOREGROUND_0
+  - first:
+      213: -7068346593952536235
+    second: CampFOREGROUND_1
+  - first:
+      213: 7986825918243524098
+    second: CampFOREGROUND_2
+  - first:
+      213: 7020913962012343625
+    second: CampFOREGROUND_3
+  - first:
+      213: -1909333096179721203
+    second: CampFOREGROUND_4
+  - first:
+      213: 5062885948831273279
+    second: CampFOREGROUND_5
+  - first:
+      213: 2914361443163413352
+    second: CampFOREGROUND_6
+  - first:
+      213: -3125451699047574060
+    second: CampFOREGROUND_7
+  - first:
+      213: 467530128805527629
+    second: CampFOREGROUND_8
+  - first:
+      213: -8520263764583444755
+    second: CampFOREGROUND_9
+  - first:
+      213: 8998244662974434938
+    second: CampFOREGROUND_10
+  - first:
+      213: 4130943902403609426
+    second: CampFOREGROUND_11
+  - first:
+      213: 3114081645064599517
+    second: CampFOREGROUND_12
+  - first:
+      213: -6366746141769116202
+    second: CampFOREGROUND_13
+  - first:
+      213: -4036149214620584392
+    second: CampFOREGROUND_14
+  - first:
+      213: -2705691087392390953
+    second: CampFOREGROUND_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CampFOREGROUND_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 247
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2656e0622112900800000000000000
+      internalID: 657826975232385728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 271
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559ed16f83038ed90800000000000000
+      internalID: -7068346593952536235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_2
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 0
+        width: 124
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ec9cb4bd7e6de60800000000000000
+      internalID: 7986825918243524098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_3
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 0
+        width: 401
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d7350dc0c4f6160800000000000000
+      internalID: 7020913962012343625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_4
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 0
+        width: 283
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c9f444aafa085e0800000000000000
+      internalID: -1909333096179721203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_5
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 0
+        width: 105
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31976632fbf24640800000000000000
+      internalID: 5062885948831273279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_6
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 0
+        width: 179
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b99d6aa44e17820800000000000000
+      internalID: 2914361443163413352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_7
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 0
+        width: 109
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5d0a33d3a20a4d0800000000000000
+      internalID: -3125451699047574060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_8
+      rect:
+        serializedVersion: 2
+        x: 3261
+        y: 0
+        width: 122
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d400f31dc200d7600800000000000000
+      internalID: 467530128805527629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_9
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 19
+        width: 67
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee0f579f31f1c980800000000000000
+      internalID: -8520263764583444755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_10
+      rect:
+        serializedVersion: 2
+        x: 3569
+        y: 14
+        width: 65
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e45a2a8df20ec70800000000000000
+      internalID: 8998244662974434938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_11
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 0
+        width: 216
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25345d1b79f045930800000000000000
+      internalID: 4130943902403609426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_12
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 0
+        width: 95
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7b3afc1c0773b20800000000000000
+      internalID: 3114081645064599517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_13
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 0
+        width: 70
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d553c4dd16c4a7a0800000000000000
+      internalID: -6366746141769116202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_14
+      rect:
+        serializedVersion: 2
+        x: 2908
+        y: 0
+        width: 88
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836711a7ca7bcf7c0800000000000000
+      internalID: -4036149214620584392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CampFOREGROUND_15
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 0
+        width: 60
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d049089a44737ad0800000000000000
+      internalID: -2705691087392390953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CampFOREGROUND_0: 657826975232385728
+      CampFOREGROUND_1: -7068346593952536235
+      CampFOREGROUND_10: 8998244662974434938
+      CampFOREGROUND_11: 4130943902403609426
+      CampFOREGROUND_12: 3114081645064599517
+      CampFOREGROUND_13: -6366746141769116202
+      CampFOREGROUND_14: -4036149214620584392
+      CampFOREGROUND_15: -2705691087392390953
+      CampFOREGROUND_2: 7986825918243524098
+      CampFOREGROUND_3: 7020913962012343625
+      CampFOREGROUND_4: -1909333096179721203
+      CampFOREGROUND_5: 5062885948831273279
+      CampFOREGROUND_6: 2914361443163413352
+      CampFOREGROUND_7: -3125451699047574060
+      CampFOREGROUND_8: 467530128805527629
+      CampFOREGROUND_9: -8520263764583444755
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,22 +1,31 @@
 using UnityEngine;
+using Yarn.Unity;
 
 public class NPCInteractable : MonoBehaviour, IInteractable
 {
-    [SerializeField] private string npcName = "NPC";
+    private DialogueRunner _dialogueRunner;
+    [SerializeField] private string _nodeName;
+    private void Awake()
+    {
+        _dialogueRunner = FindFirstObjectByType<DialogueRunner>();
 
+        if (_dialogueRunner == null)
+        {
+            Debug.LogError("DialogueRunner not found in scene!");
+        }
+    }
     public void Interact()
     {
-        Debug.Log("Talk to " + npcName);
-        // TODO: Trigger Dialogue
+        triggerNode(this._nodeName);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
 
-        UIPopup.Instance.Show(
-            transform,
-            $"Talk to {npcName}"
-        );
+    }
+    public async void triggerNode(string _nodeName)
+    {
+        await _dialogueRunner.StartDialogue(_nodeName);
     }
 }

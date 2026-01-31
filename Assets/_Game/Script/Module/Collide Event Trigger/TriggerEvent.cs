@@ -4,13 +4,15 @@ public class TriggerEvent : MonoBehaviour
 {
     private IInteractable currentInteractable;
 
+    private void Awake()
+    {
+        currentInteractable = GetComponent<IInteractable>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player")) return;
-
-        currentInteractable = GetComponent<IInteractable>();
-
-        if (currentInteractable != null)
+        if (currentInteractable != null && PlayerInteractor.Instance != null)
         {
             PlayerInteractor.Instance.SetInteractable(currentInteractable);
         }
@@ -19,11 +21,15 @@ public class TriggerEvent : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player")) return;
-        if(UIPopup.Instance.gameObject.activeInHierarchy)
+
+        if (UIPopup.Instance != null && UIPopup.Instance.gameObject.activeInHierarchy)
         {
             UIPopup.Instance.Hide();
         }
-        PlayerInteractor.Instance.ClearInteractable();
-        currentInteractable = null;
+
+        if (PlayerInteractor.Instance != null)
+        {
+            PlayerInteractor.Instance.ClearInteractable();
+        }
     }
 }

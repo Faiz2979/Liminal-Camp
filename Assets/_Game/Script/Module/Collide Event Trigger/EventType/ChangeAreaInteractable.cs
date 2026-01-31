@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
@@ -5,7 +6,8 @@ using UnityEngine;
 public class ChangeAreaInteractable : MonoBehaviour, IInteractable
 {
     [SerializeField] private Transform newAreaSpawnPoint;
-
+    [SerializeField] private BoxCollider2D newAreaCollider;
+    [SerializeField] private CinemachineConfiner2D confiner;
     private bool isTransitioning;
 
     public void Interact()
@@ -16,9 +18,10 @@ public class ChangeAreaInteractable : MonoBehaviour, IInteractable
             return;
         }
         if (isTransitioning) return;
-
         isTransitioning = true;
 
+        confiner.BoundingShape2D = newAreaCollider;
+        UITransitionController.Instance.gameObject.SetActive(true);
         UITransitionController.Instance.PlayTransition(MovePlayer);
     }
 

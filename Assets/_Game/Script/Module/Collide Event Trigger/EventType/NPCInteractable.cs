@@ -17,13 +17,9 @@ public class NPCInteractable : MonoBehaviour, IInteractable
     public void Interact()
     {
         triggerNode(this._nodeName);
+        PlayerInteractor.Instance.ClearInteractable();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (!other.CompareTag("Player")) return;
-
-    }
     public async void triggerNode(string _nodeName)
     {
         await _dialogueRunner.StartDialogue(_nodeName);

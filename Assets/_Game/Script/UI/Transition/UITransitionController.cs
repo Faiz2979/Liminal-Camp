@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using Yarn.Unity;
 
 public class UITransitionController : MonoBehaviour
 {
@@ -21,7 +22,13 @@ public class UITransitionController : MonoBehaviour
     public void AnimationEvent_Complete()
     {
         onTransitionComplete?.Invoke();
-        onTransitionComplete = null;
-        this.gameObject.SetActive(false);
+        onTransitionComplete = null;    
+    }
+
+    [YarnCommand("PlayTransition")]
+    public void Yarn_PlayTransition()
+    {
+        gameObject.SetActive(true);
+        PlayTransition(null);
     }
 }

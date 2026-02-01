@@ -19,7 +19,8 @@ public class TorchInteractable : MonoBehaviour, IInteractable
     public void Interact()
     {
         _dialogueRunner.VariableStorage.TryGetValue<bool>("$torchQuestStarted", out bool isStartQuest);
-       if(isStartQuest == false){
+        _dialogueRunner.VariableStorage.TryGetValue<bool>("$haveLighter", out bool haveLighter);
+       if(isStartQuest == false || haveLighter == false){
             triggerNode("LitTorchesNotStarted");
             return;
        }

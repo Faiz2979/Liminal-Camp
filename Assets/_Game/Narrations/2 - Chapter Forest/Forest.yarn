@@ -1,4 +1,15 @@
 ﻿
+title: Init
+---
+<<set $torchQuestStarted = false>>
+<<set $torchQuestCompleted = false>>
+<<set $haveLighter = false>>
+<<set $allTorchesLit = false>>
+<<set $findMaskQuestStarted = false>>
+<<set $searchAttempt = 0>>
+<<set $maskQuestCompleted = false>>
+<<set $maskFound = false>>
+===
 
 
 title: ForestPrologue
@@ -16,33 +27,33 @@ Messenger 	: Messenger.
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me 	: Oh. Hi, Messenger.
 <<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
-Messenger  	: It’s Mr. Messenger.
+Mr Messenger  	: It’s Mr. Messenger.
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me 	: Right. Sorry.
 <<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
-Messenger  	: Don’t worry. I got it worse.
+Mr Messenger  	: Don’t worry. I got it worse.
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me 	: I think I’m lost. 
 Me  : What is this place?
 <<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
-Messenger : A forest where people pass through.
-Messenger : But some people decided to stay longer
+Mr Messenger : A forest where people pass through.
+Mr Messenger : But some people decided to stay longer
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me : I don’t want to stay.
 Me : I want to go home.
 <<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
-Messenger : ...
+Mr Messenger : ...
 <<wait 2.0>>
-Messenger  	: That depends.
+Mr Messenger  	: That depends.
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me 	: On what?
 <<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
-Messenger 	 : On whether you’re done here.
+Mr Messenger 	 : On whether you’re done here.
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me 	: Done with what?
 <<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
 // <<PlaySFX>>
-Messenger : Come with me.
+Mr Messenger : Come with me.
 <<PlayAnimation NarrationInteraction "Messenger NPC Cutscene">>
 <<wait 1.5>>
 <<ChangeLookAtTarget NarrationInteraction "Player">>
@@ -52,23 +63,23 @@ Messenger : Come with me.
 
 title: ForestPrologue2
 ---
-<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC">>
 <<SetAnimatorState Player "Focus" true>>
 Mr Messenger : Here it is
 Mr Messenger : Welcome to the Liminal Camp
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me : Liminal… Camp?
-<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC">>
 Mr Messenger : Yeah, this is the resting place for a tired soul
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me : I don’t need a resting place
 Me : I want to go home
-<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC">>
 Mr Messenger : Easy.
 Mr Messenger : Everyone says that at first.
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me 	: I’m serious.
-<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC">>
 Mr Messenger : I know.
 Mr Messenger : That’s why you’re here.
 <<wait 1.5>>
@@ -77,135 +88,28 @@ Mr Messenger : getting out of this place isn’t impossible.
 Mr Messenger : But it’s rarely immediate.
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me 	: Then what do I do?
-<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC">>
 Mr Messenger : You help.
 Mr Messenger : That’s how this place stays standing.
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me : Help you?
 Me : How?
-<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC">>
 Mr Messenger : What about you can help me make this place livelier?
 Mr Messenger : Let’s see…
 <<wait 1.0>>
 Mr Messenger : How about we start by asking the people around?
 <<ChangeLookAtTarget NarrationInteraction "Player">>
 Me	: I don’t know…
-<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene">>
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC">>
 Mr Messenger	: Just try
 <<wait 0.5>>
 <<SetAnimatorState Player "Focus" false>>
 <<EnableController FadeIn>>
+<<PlayAnimation NarrationInteraction "Messenger NPC">>
 ===
 
-title: MaskedFigure1Intro
+title: TitlePopup
 ---
-<<if $torchQuestStarted == true>>
-    <<jump MaskedFigure1Check>>
-<<endif>>
-
-<<ChangeLookAtTarget NarrationInteraction "Masked Figure 1">>
-<<SetAnimatorState Player "Focus" true>>
-Me  	: Um… hello?
-Masked Figure 	: …Huh!? Who’s there?
-<<ChangeLookAtTarget NarrationInteraction "Player">>
-Me  	: Sorry, I didn’t mean to scare you.
-<<ChangeLookAtTarget NarrationInteraction "Masked Figure 1">>
-Masked Figure 	: It’s fine.
-    Masked Figure 	: I just… didn’t see you.
-    <<ChangeLookAtTarget NarrationInteraction "Player">>
-    Me  	: I’m right here.
-    <<ChangeLookAtTarget NarrationInteraction "Masked Figure 1">>
-    Masked Figure 	: Yeah.
-    Masked Figure 	: It’s hard to tell, in the dark.
-    <<ChangeLookAtTarget NarrationInteraction "Player">>
-    Me  	: …Is there anything I can help you with?
-    <<ChangeLookAtTarget NarrationInteraction "Masked Figure 1">>
-    Masked Figure 	: ……
-    Masked Figure 	: You don’t have to.
-    <<ChangeLookAtTarget NarrationInteraction "Player">>
-    Me  	: I don’t mind.
-    <<ChangeLookAtTarget NarrationInteraction "Masked Figure 1">>
-    Masked Figure 	: This place used to feel warmer.
-    Masked Figure 	: Or maybe I just remember it that way.
-    <<ChangeLookAtTarget NarrationInteraction "Player">>
-    Me  	: What changed?
-    <<ChangeLookAtTarget NarrationInteraction "Masked Figure 1">>
-    Masked Figure 	: The lights went out.
-    Masked Figure 	: One by one.
-    Masked Figure 	: I kept meaning to fix them.
-    <<ChangeLookAtTarget NarrationInteraction "Player">>
-    Me  	: I think I could help with that.
-    <<ChangeLookAtTarget NarrationInteraction "Masked Figure 1">>
-    Masked Figure 	: …If you want.
-    Masked Figure 	: I didn’t think anyone would notice.
-    <<set $torchQuestStarted = true>>
-    <<EnableController FadeIn>>
-    <<SetAnimatorState Player "Focus" false>>
-
-===
-
-title: MaskedFigure1InProgress
----
-<<ChangeLookAtTarget NarrationInteraction "Masked Figure 1">>
-Masked Figure : You don’t have to force yourself.
-Masked Figure : The others think that they are okay with the darkness.
-<<EnableController FadeIn>>
-===
-
-title: MaskedFigure1Completed
----
-<<ChangeLookAtTarget NarrationInteraction "Masked Figure 1">>
-<<SetAnimatorState Player "Focus" true>>
-
-Masked Figure : Ah!
-Masked Figure : It’s a lot brighter now!
-
-<<wait 0.5>>
-
-Masked Figure : You did all of these?
-Masked Figure : Thank you so much!
-
-<<wait 1.0>>
-
-Masked Figure : You know…
-Masked Figure : sometimes in life, you will feel like there is no one trying to help.
-Masked Figure : And it will feel dark and gloomy.
-
-<<ChangeLookAtTarget NarrationInteraction "Player">>
-
-Masked Figure : When that time comes,
-Masked Figure : be someone kind enough to light the way.
-
-<<set $torchQuestCompleted = true>>
-<<SetAnimatorState Player "Focus" false>>
-<<EnableController FadeIn>>
-===
-
-title: MaskedFigure1Check
----
-<<if $allTorchesLit == false>>
-    <<jump MaskedFigure1InProgress>>
-<<else>>
-    <<jump MaskedFigure1Completed>>
-<<endif>>
-===
-
-title: LitTorches
----
-<<set $litTorches = $litTorches + 1>>
-<<if $litTorches >= 5>>
-    <<set $allTorchesLit = true>>
-Me : I think thats all
-<<endif>>
-===
-
-title: LitTorchesNotStarted
----
-Me: I dont have anything to light this torch
-===
-title: Init
----
-<<set $torchQuestStarted = false>>
-<<set $torchQuestCompleted = false>>
-<<set $allTorchesLit = false>>
+<<GameObjectState NarrationInteraction "Title" true>>
 ===

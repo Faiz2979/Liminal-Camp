@@ -1,0 +1,131 @@
+title: EndingCampIntro
+---
+Mr Messenger : Jiva! Over here!
+
+<<PlayAnimation NarrationInteraction "Messenger NPC Cutscene 2">>
+<<PlayTransition Transition>>
+<<wait 0.1>>
+<<SetPlayerPosition NarrationInteraction "Messenger NPC Cutscene 2" 2>>
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+<<SetAnimatorState Player "Focus" true>>
+
+Me(Jiva) : What?
+Me(Jiva) : …Wait.
+Me(Jiva) : How do you know my name?
+
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene 2">>
+
+Mr Messenger : I know everyone’s name.
+Mr Messenger : Eventually.
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+
+Me(Jiva) : That’s not comforting.
+
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene 2">>
+
+Mr Messenger : It’s not meant to be.
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+
+Me(Jiva) : I have so many questions now.
+
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene 2">>
+
+Mr Messenger : I know.
+Mr Messenger : Answer mine first.
+
+Mr Messenger : Do you still want to go home?
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+
+Me(Jiva) : Yes.
+Me(Jiva) : I think I do.
+
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene 2">>
+
+Mr Messenger : That was quicker than before.
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+
+Me(Jiva) : Before?
+
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene 2">>
+
+Mr Messenger : You didn’t say it like that earlier.
+Mr Messenger : You said it like you were running.
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+
+Me(Jiva) : …Maybe.
+Me(Jiva) : But I’m not done here, am I?
+
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene 2">>
+
+Mr Messenger : That’s the question.
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+
+Me(Jiva) : Then, I want to go home.
+Me(Jiva) : Not to escape.
+Me(Jiva) : Just… to go.
+
+<<ChangeLookAtTarget NarrationInteraction "Messenger NPC Cutscene 2">>
+
+Mr Messenger : ……
+<<wait 0.6>>
+Mr Messenger : Alright.
+<<SetAnimatorState Player "Focus" false>>
+<<jump ForestCampEnding>>
+===
+
+title: ForestCampEnding
+---
+
+<<SetPlayerPosition NarrationInteraction "Masked Figure 2" 5>>
+<<PlayAnimation NarrationInteraction "Masked Figure 3">>
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 2">>
+<<MoveCharacter NarrationInteraction "Masked Figure 2" "Masked Figure 2 End Loc">>
+<<MoveCharacter NarrationInteraction "Masked Figure 3" "Masked Figure 3 End Loc">>
+<<PlayAnimation NarrationInteraction "Masked Figure 2">>
+<<MoveCharacter NarrationInteraction "Mask 2" "Mask 2 End Loc">>
+<<MoveCharacter NarrationInteraction "Mask 3" "Mask 3 End Loc">>
+Masked Figure 2 : So you wanna go, now?
+    
+M (Jiva) : Yeah.
+Me (Jiva) : I think it is my time.
+Masked Figure 2 : It is bright and warm here, thanks to you.
+
+Masked Figure 3 : I can get out again.
+Masked Figure 3 : And that’s thanks to you.
+
+Me (Jiva) : I just did what I should.
+
+Masked Figure 2 : Thank you for finding light for me.
+Masked Figure 2 : For us.
+
+Masked Figure 2 : Thank you for helping me.
+Masked Figure 2 : Helping us to get out.
+
+<<wait 0.3>>
+
+Masked Figure 3 : Maybe now we will still need the mask to face the world.
+Masked Figure 3 : But I wish we would be able to face it…
+Masked Figure 3 : For whatever we are in the future.
+
+Masked Figure 2: We hope we can face this world—
+Masked Figure 3: —with a braver stance.
+Me : And we will never be alone.
+<<PlayAnimation NarrationInteraction "Camp Ending">>
+===
+
+title: Epilogue
+---
+I woke up with an uncomfortable sensation around my neck
+People are surrounding me
+Some even crying
+I don’t know what will happen after this
+But I will try…
+<<PlayAnimation NarrationInteraction "The End">>
+===

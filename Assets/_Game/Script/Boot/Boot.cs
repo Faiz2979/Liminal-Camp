@@ -32,4 +32,14 @@ public class Boot : MonoBehaviour
 
         _dialogueRunner.StartDialogue("Prologue");
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
+    public void SetActive(bool isActive)
+    {
+        gameObject.SetActive(isActive);
+    }
 }

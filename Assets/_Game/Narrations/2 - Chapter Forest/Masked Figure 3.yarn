@@ -1,0 +1,148 @@
+﻿
+title: FindMaskIntro
+---
+<<if $findMaskQuestStarted == true>>
+    <<jump FindMaskCheck>>
+<<endif>>
+
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+<<SetAnimatorState Player "Focus" true>>
+
+Me : (What’s wrong with this tent?)
+
+<<wait 0.3>>
+
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+Voice : <muffled crying>
+
+Me : …Hello?
+Voice : Go away!
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+Me : I… I didn’t mean to intrude.
+
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+Voice : Just go!
+
+<<wait 0.4>>
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+Me : …Something sounds wrong.
+
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+
+<<wait 0.5>>
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+Me : I’m not here to take anything.
+Me : I just… heard you.
+
+<<wait 0.2>>
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+<<wait 0.1>>
+
+Voice : I lost something.
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+Me : What did you lose?
+
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+Voice : …My mask.
+
+Voice : I shouldn’t have taken it off.
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+Me : Is that why you’re hiding?
+
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+Voice : <tent rustles>
+Voice : I don’t want anyone to see me like this.
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+Me : I can help look.
+Me : If you want.
+
+<<EnableSearchMaskQuest NarrationInteraction>>
+
+<<wait 0.3>>
+
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+Voice : …You’d do that?
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+Me : Yeah.
+Me : Can you tell me where you might lost it?
+
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+Voice : It falls somewhere at the forest.
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+Me : O… Okay.
+Me : (How can it casually fall?)
+<<set $findMaskQuestStarted = true>>
+<<SetAnimatorState Player "Focus" false>>
+===
+
+title: FindMaskInProgress
+---
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+
+Voice : Have you found it yet?
+Voice : I… don’t think I can come out without it.
+
+<<EnableController FadeIn>>
+===
+
+title: FindMaskCompleted
+---
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+<<SetAnimatorState Player "Focus" true>>
+
+Voice : …That’s it.
+
+<<wait 0.3>>
+
+Voice : You found my mask.
+Voice : Thank you…
+
+<<ChangeLookAtTarget NarrationInteraction "Player">>
+Me : You don’t have to hide anymore.
+
+<<ChangeLookAtTarget NarrationInteraction "Masked Figure 3">>
+Voice : Maybe…
+Voice : Maybe not everyone is scary after all.
+<<ChangeLayerOrder NarrationInteraction "Masked Figure 3" 1>>
+<<set $maskQuestCompleted = true>>
+<<PlayAnimation NarrationInteraction "Camp">>
+<<SetAnimatorState Player "Focus" false>>
+<<wait 3.0>>
+<<if $maskQuestCompleted == true && $torchQuestCompleted == true>>
+    <<jump EndingCampIntro>>
+<<endif>>
+===
+
+title: FindMaskCheck
+---
+<<if $maskFound == true>>
+    <<jump FindMaskCompleted>>
+<<else>>
+    <<jump FindMaskInProgress>>
+<<endif>>
+===
+
+title: FindMaskSearch
+---
+<<set $searchAttempt = $searchAttempt + 1>>
+
+<<ChangeLookAtTarget NarrationInteraction "Ground">>
+
+<<if $searchAttempt >= 4>>
+    <<set $maskFound = true>>
+    Me : This must be it.
+    <<GameObjectState NarrationInteraction "Mask Item" true>>
+<<else>>
+    Me : …Nothing here.
+<<endif>>
+
+<<EnableController FadeIn>>
+===

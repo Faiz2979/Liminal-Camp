@@ -10,6 +10,10 @@ public class ChangeAreaInteractable : MonoBehaviour, IInteractable
     [SerializeField] private CinemachineConfiner2D confiner;
     private bool isTransitioning;
 
+    void Awake()
+    {
+        confiner.InvalidateBoundingShapeCache();
+    }
     public void Interact()
     {
         if (newAreaSpawnPoint == null)
@@ -28,6 +32,7 @@ public class ChangeAreaInteractable : MonoBehaviour, IInteractable
     private void MovePlayer()
     {
         PlayerInteractor.Instance.transform.position = newAreaSpawnPoint.position;
+        confiner.InvalidateBoundingShapeCache();
         isTransitioning = false;
     }
 
